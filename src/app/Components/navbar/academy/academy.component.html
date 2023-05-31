@@ -1,0 +1,49 @@
+<div class="container">
+  <a class="link">Anasayfa | Başarılarımız </a>
+  
+  <div class="box">
+    <h2 class="mt-4 text-center">Başarılarımız</h2>
+    
+    <select [(ngModel)]="selectedOption">
+      <option value="option1"> Yurtiçi Ödüllerimiz</option>
+      <option value="option2"> Yurtdışı Ödüllerimiz </option>
+    </select>
+
+    <div [ngSwitch]="selectedOption">
+      <div *ngSwitchCase="'option1'">
+        <h3 class="text-center"> Yurtiçi Ödüllerimiz </h3>
+        <div class="row">
+        <div *ngFor="let award of awards"  class="card mt-1" style="width:16rem;margin-left:18px;">
+          <img src="{{award.photoUrl}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{award.name}}</h5>
+            <p class="card-text">{{award.description}}</p>
+          </div>
+        </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="'option2'">
+        <h3 class="text-center"> Yurtdışı Ödüllerimiz </h3>
+        <div class="row">
+        <div *ngFor="let local of locals"  class="card mt-1" style="width: 16rem;margin-left:18px;">
+          <img src="{{local.photoUrl}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{local.name}}</h5>
+            <p class="card-text">{{local.description}}</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div *ngSwitchDefault>
+        <p> Kategori Seçiniz </p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+</div>
+

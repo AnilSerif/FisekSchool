@@ -1,0 +1,5 @@
+input::placeholder {
+    color: #999; /* Placeholder metnin rengi */
+    font-style: italic; /* Placeholder metnin stilini değiştirme */
+    font-size: 14px; /* Placeholder metnin font boyutu */
+  }

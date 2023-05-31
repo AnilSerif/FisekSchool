@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 1px solid red;*/
+    height: 30px;
+
+    overflow: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .facebook:hover{
+    cursor: pointer;
+    color:#4267B2;
+  }
+  .instagram:hover{
+    color:#C13584;
+    cursor: pointer;
+  }
+
+  .linkedin:hover{
+    color:#0096D6;
+    cursor: pointer;
+  }
+
+  .pinterest:hover{
+    color:#E60023;
+    cursor: pointer;
+  }
+
+  .hone{font-size: 15px;}
+  .phone{font-size:14px;
+    font-family:"Brother1816 Printed",sans-serif ;
+    }
+
+  .secondSection {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #636a73;
+    font-family: "Brother1816 Printed", sans-serif;
+  }
+  
+  .secondSection li {
+    padding-right: 10px;
+  }
+
+  .thirdSection{
+    font-size: 14px;
+    font-family: "Brother 1816",sans-serif;
+    color:#000;
+  }
+
+.FK,.FE,.FA, .FI {
+    transition: color 0.3s ease;
+}
+
+.FK:hover,
+.FE:hover,
+.FA:hover,
+.FI:hover {
+    color: orange;
+}
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    .navbar {
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+  
+    .secondSection {
+      justify-content: flex-end;
+    }
+  
+    .navbar li,
+    .secondSection li {
+      padding: 5px 10px;
+    }
+  }
+  

@@ -1,0 +1,20 @@
+<div class="container">
+<div class="box">
+  <h3 class="text-center">Kampüslerimiz </h3>
+  <div class="row">
+  <div class="card mb-1 mt-4 ms-3" *ngFor="let campus of campus" style="max-width:500px;">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{campus.photoUrl}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">{{campus.name}}</h5>
+          <p class="card-text">{{campus.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

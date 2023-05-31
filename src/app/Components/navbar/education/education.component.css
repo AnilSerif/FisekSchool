@@ -1,0 +1,22 @@
+.link{
+    font-weight: normal;
+    font-family: "Brother1816 Printed",sans-serif;
+    font-size: 11px;
+    color: #4f4f4f;
+    text-decoration: none;
+}
+.box p{
+    color:#636a73;
+    font-size:14px;
+}
+
+.box{
+    overflow-y:hidden;
+    overflow-x: hidden;
+    margin-top:20px;
+    font-family:"Brother1816 Printed",sans-serif;
+}
+
+li{
+    font-family:"Brother1816 Printed",sans-serif;
+}
